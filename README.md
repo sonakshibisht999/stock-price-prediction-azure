@@ -1,46 +1,77 @@
-# 📈 Stock Price Prediction using Azure AI
+# 📈 Stock Price Prediction using Linear Regression
 
-This project was developed as part of the *Microsoft Azure AI Internship* by *Edunet Foundation. It uses historical stock market data to predict future stock prices using regression models in **Azure Machine Learning Studio*.
+This project aims to predict the *closing price* of Infosys stock using historical data from the *NSE (National Stock Exchange)*. The model leverages features like Open, High, Low, and Volume to forecast the Close price using a *Linear Regression model*.
 
-## 🔍 Problem Statement
-Stock markets are influenced by many unpredictable factors, making it difficult for investors to make informed decisions. This project aims to forecast stock prices using AI/ML to support better financial insights.
+> 📌 Developed as part of the *Microsoft Azure AI Internship* in collaboration with *Edunet Foundation* and *AICTE*.
 
- ## Tools & Technologies
-- Microsoft Azure Machine Learning Studio
-- Linear Regression / Decision Forest Regression
-- Yahoo Finance historical stock data (CSV)
-- Power BI / Excel (for optional visualization)
+---
 
-## 📊 Dataset
-- Sample company: Infosys (INFY.NS)
-- Data includes: Date, Open, High, Low, Close, Volume
+## 🗃 Dataset
 
-## 🧪 Model Workflow
-1. Upload dataset to Azure ML
-2. Clean & split data (80/20)
-3. Apply regression model
-4. Score & evaluate predictions
-5. Visualize predicted vs actual prices
+- Source: Official Infosys data from NSE
+- Format: .csv
+- Features used:
+  - OPEN
+  - HIGH
+  - LOW
+  - VOLUME
+  - CLOSE (target variable)
 
-## 📈 Results
-- *R² Score*: ~0.85
-- *RMSE*: Low (accurate predictions)
-- Output visual confirms strong trend capture
+---
 
-## 🚀 Future Scope
-- Use LSTM/ARIMA for time series improvement
-- Add sentiment analysis using Azure OpenAI
-- Real-time Power BI dashboards
-- Deploy as chatbot using Azure Bot Framework
+## 🧠 Tools & Technologies
 
-## 📁 Project Files
-- 📄 Report PDF
-- 📊 Presentation PPTX
-- 📁 Dataset (CSV)
-- 🖼 Azure pipeline & output visuals
+- Python 3.13
+- Jupyter Notebook
+- pandas, numpy
+- scikit-learn (Linear Regression, train/test split, evaluation)
+- matplotlib (visualization)
 
-## 👤 Author
+---
+
+## 🔍 Model Workflow
+
+1. Data Loading & Cleaning
+2. Feature Selection (OPEN, HIGH, LOW, VOLUME)
+3. Train/Test Split (80/20)
+4. Linear Regression Model Training
+5. Model Evaluation
+6. Visualization of Actual vs Predicted Prices
+
+---
+
+## 📊 Model Evaluation
+
+| Metric | Value |
+|--------|-------|
+| R² Score | e.g., 0.84 |
+| RMSE     | e.g., 12.57 |
+
+📷 *Screenshots*:
+- [✔ Actual vs Predicted Graph](screenshots/actual_vs_predicted_chart.png)
+- [✔ Model Evaluation Output](screenshots/model_metrics_output.png)
+
+---
+
+## 📂 Project Structure
+📁 stock-price-prediction-azure/ ├── infosys_stock_data.csv ├── stock_price_prediction.ipynb ├── Project_Report.pdf ├── Presentation.pptx ├── screenshots/ │   ├── actual_vs_predicted_chart.png │   └── model_metrics_output.png └── README.md
+---
+
+## ✅ Outcome
+
+This project demonstrates the application of *basic machine learning* for financial prediction using real-world data. The model's performance shows promising predictive power and provides insight into trends in Infosys stock pricing.
+
+---
+
+## 📌 Author
+
 *Sonakshi Bisht*  
-Microsoft Azure AI Internship  
-Edunet Foundation | AICTE
+Intern, Microsoft Azure AI Program  
+Specialization: MBA – Business Analytics & Finance  
+GitHub: [@sonakshibisht999](https://github.com/sonakshibisht999)
 
+---
+
+## 📬 Acknowledgment
+
+This project was completed under the guidance of the *Edunet Foundation* and *AICTE* as part of the *Microsoft Azure AI Internship Program*.
