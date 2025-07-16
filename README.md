@@ -6,7 +6,7 @@ This project aims to predict the *closing price* of Infosys stock using historic
 
 ---
 
-## 🗃 Dataset
+## Dataset
 
 - Source: Official Infosys data from NSE
 - Format: .csv
@@ -19,7 +19,7 @@ This project aims to predict the *closing price* of Infosys stock using historic
 
 ---
 
-## 🧠 Tools & Technologies
+## Tools & Technologies
 
 - Python 3.13
 - Jupyter Notebook
@@ -29,7 +29,7 @@ This project aims to predict the *closing price* of Infosys stock using historic
 
 ---
 
-## 🔍 Model Workflow
+## Model Workflow
 
 1. Data Loading & Cleaning
 2. Feature Selection (OPEN, HIGH, LOW, VOLUME)
@@ -40,7 +40,7 @@ This project aims to predict the *closing price* of Infosys stock using historic
 
 ---
 
-## 📊 Model Evaluation
+## Model Evaluation
 
 | Metric | Value |
 |--------|-------|
@@ -57,13 +57,13 @@ This project aims to predict the *closing price* of Infosys stock using historic
 📁 stock-price-prediction-azure/ ├── infosys_stock_data.csv ├── stock_price_prediction.ipynb ├── Project_Report.pdf ├── Presentation.pptx ├── screenshots/ │   ├── actual_vs_predicted_chart.png │   └── model_metrics_output.png └── README.md
 ---
 
-## ✅ Outcome
+## Outcome
 
 This project demonstrates the application of *basic machine learning* for financial prediction using real-world data. The model's performance shows promising predictive power and provides insight into trends in Infosys stock pricing.
 
 ---
 
-## 📌 Author
+## Author
 
 *Sonakshi Bisht*  
 Intern, Microsoft Azure AI Program  
